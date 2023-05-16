@@ -38,7 +38,7 @@ attribution: 'Latihan Web GIS'
 });
 
 var baseLayers = {
- 'Google Satellite Hybrid': GoogleSatelliteHybrid,
+ 'Google Satellpushite Hybrid': GoogleSatelliteHybrid,
  'Peta Kedua':Esri_NatGeoWorldMap,
  'Google Map': GoogleMaps,
  'Google Roads' : GoogleRoads
@@ -48,7 +48,7 @@ var groupedOverlays = {
 "Peta Dasar":{
 'Ibu Kota Provinsi' :prov,
 'Jaringan Sungai': sungai,
-'Provinsi' :provin},
+'Poligon Provinsi ' :provin},
 "Peta Khusus":{
 'Fasilitas Kesehatan' :faskes
 } 
@@ -258,6 +258,6 @@ $.getJSON("<?=base_url()?>/assets/provinsi_poligon.geojson",function(kode){
  }]
  })
  .addTo(map);
- 
+
 </script>
 
