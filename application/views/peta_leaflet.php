@@ -19,7 +19,11 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_M
 attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
 maxZoom: 16
 })
-var baseLayers = {'Google Satellite Hybrid': GoogleSatelliteHybrid}; 
+var baseLayers = {
+ 'Google Satellite Hybrid': GoogleSatelliteHybrid,
+ 'Peta Kedua':Esri_NatGeoWorldMap
+};
+
 var overlayLayers = {} 
 L.control.layers(baseLayers, overlayLayers, {collapsed: true}).addTo(map);
 
