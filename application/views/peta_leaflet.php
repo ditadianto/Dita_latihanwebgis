@@ -6,6 +6,7 @@
 
 var prov = new L.LayerGroup();
 var faskes = new L.LayerGroup();
+var sungai = new L.LayerGroup();
 
 
 var map = L.map('map', { 
@@ -44,7 +45,8 @@ var baseLayers = {
 
 var groupedOverlays = {
 "Peta Dasar":{
-'Ibu Kota Provinsi' :prov},
+'Ibu Kota Provinsi' :prov,
+'Jaringan Sungai': sungai},
 "Peta Khusus":{
 'Fasilitas Kesehatan' :faskes
 } 
@@ -171,6 +173,21 @@ return marker;
 }).addTo(faskes); 
 });
 
+$.getJSON("<?=base_url()?>/assets/sungai.geojson",function(kode){ 
+ L.geoJson( kode, { 
+ style: function(feature){ 
+ var color, 
+ kode = feature.properties.kode; 
+ if ( kode < 2 ) color = "#f2051d"; 
+ else if ( kode > 0 ) color = "#f2051d"; 
+ else color = "#f2051d"; // no data 
+ return { color: "#999", weight: 5, color: color, fillOpacity: .8 }; 
+ }, 
+ onEachFeature: function( feature, layer ){ 
+ layer.bindPopup 
+ () 
+ } }).addTo(sungai); 
+});
 
 </script>
 
