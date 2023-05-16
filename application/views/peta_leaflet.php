@@ -3,6 +3,9 @@
  <div id="map" style="width: 100%; height: 530px; color:black;"></div> 
 </div> 
 <script> 
+
+var prov = new L.LayerGroup();
+
 var map = L.map('map', { 
  center: [-1.7912604466772375, 116.42311966554416], 
  zoom: 5, 
@@ -19,13 +22,31 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_M
 attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
 maxZoom: 16
 })
+
+var GoogleMaps = new 
+L.TileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', { opacity: 1.0, 
+attribution: 'Latihan Web GIS' 
+});
+var GoogleRoads = new 
+L.TileLayer('https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}',{ 
+opacity: 1.0, 
+attribution: 'Latihan Web GIS' 
+});
+
 var baseLayers = {
  'Google Satellite Hybrid': GoogleSatelliteHybrid,
- 'Peta Kedua':Esri_NatGeoWorldMap
+ 'Peta Kedua':Esri_NatGeoWorldMap,
+ 'Google Map': GoogleMaps,
+ 'Google Roads' : GoogleRoads
 };
 
-var overlayLayers = {} 
-L.control.layers(baseLayers, overlayLayers, {collapsed: true}).addTo(map);
+var groupedOverlays = {
+"Peta Dasar":{
+'Ibu Kota Provinsi' :prov} 
+};
+
+
+L.control.groupedLayers(baseLayers, groupedOverlays).addTo(map)
 
 var osmUrl='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'; 
 var osmAttrib='Map data &copy; OpenStreetMap contributors'; 
@@ -88,6 +109,20 @@ north.onAdd = function(map) {
         div.innerHTML = '<img src="<?=base_url()?>assets/arah-mata-angin.png"style=width:200px;>'; 
         return div; } 
         north.addTo(map);
+
+        $.getJSON("<?=base_url()?>assets/provinsi.geojson",function(data){ 
+var ratIcon = L.icon({ 
+iconUrl: '<?=base_url()?>assets/Marker-1.png', 
+iconSize: [12,10] 
+}); 
+L.geoJson(data,{ 
+pointToLayer: function(feature,latlng){ 
+var marker = L.marker(latlng,{icon: ratIcon}); 
+marker.bindPopup(feature.properties.CITY_NAME); 
+return marker; 
+} 
+}).addTo(prov); 
+});
 
 </script>
 
