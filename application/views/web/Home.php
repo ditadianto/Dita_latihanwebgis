@@ -60,11 +60,12 @@
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="index.html">Home</a> </li>
-                      <li> <a href="#courses">My Courses </a> </li>
+
+                      <li class="active"> <a href="<?=base_url()?>">Home</a> </li>
+                      <li> <a href="#important">MAP</a> </li>
                       <li> <a href="#about">About</a> </li>
                       <li> <a href="#learn">My Profile</a> </li>
-                      <li> <a href="#important">Become an Instructor</a> </li>
+                     
                       <li> <a href="#contact">Contact</a> </li>
                      </ul>
                    </nav>
@@ -95,12 +96,10 @@
                 <div class="row">
                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="text-bg">
-                      <h1>Search your Favorite Course here</h1>
-                      <p>TOP NOTCH COURSES FROM TRAINED PROFESSIONALS</p>
-                      <a href="#">Read more</a> <a href="#">get a qoute</a>
+                    <h1>Welcome to Rahmadita's WebGIS</h1>
+                      <p>Temukan Informasi yang Dibutuhkan</p>
                     </div>
                   </div>
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="images_box">
                       <figure><img src="<?=base_url()?>assets/web/images/img2.png"></figure>
                     </div>
@@ -110,53 +109,6 @@
             </div>
           </div>
           <div class="carousel-item">
-
-            <div class="container-fluid padding_dd">
-              <div class="carousel-caption">
-
-                <div class="row">
-                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                    <div class="text-bg">
-                      <h1>Search your Favorite Course here</h1>
-                      <p>TOP NOTCH COURSES FROM TRAINED PROFESSIONALS</p>
-                      <a href="#">Read more</a><a href="#">get a qoute</a>
-                    </div>
-                  </div>
-
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                    <div class="images_box">
-                      <figure><img src="<?=base_url()?>assets/web/images/img2.png"></figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="carousel-item">
-
-            <div class="container-fluid padding_dd">
-              <div class="carousel-caption ">
-                <div class="row">
-                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                    <div class="text-bg">
-                      <h1>Search your Favorite Course here</h1>
-                      <p>TOP NOTCH COURSES FROM TRAINED PROFESSIONALS</p>
-                      <a href="#">Read more</a> <a href="#">get a qoute</a>
-                    </div>
-                  </div>
-                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                    <div class="images_box">
-                      <figure><img src="<?=base_url()?>assets/web/images/img2.png"></figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -181,10 +133,8 @@
     <div class="row">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
-          <h2>About <strong class="yellow">Our Game</strong></h2>
-          <p> orem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatem maiores eaque similique non distinctio voluptates perspiciatis omnis, repellendus ipsa aperiam, laudantium voluptatum nulla?.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, assumenda, vo
-          luptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos at consectetur illo culpa,  </p>
+          <h2>About <strong class="yellow">WebGIS</strong></h2>
+          <p> WebGIS adalah aplikasi GIS atau pemetaan digital yang memanfaatkan jaringan internet sebagai media komunikasi yang berfungsi mendistribusikan, mempublikasikan, mengintegrasikan, mengkomunikasikan dan menyediakan informasi dalam bentuk teks, peta dijital serta menjalankan fungsi–fungsi analisis dan query yang terkait dengan GIS melalui jaringan internet.</p>
           <a href="Javascript:void(0)">Read more</a>
         </div>
       </div>
@@ -207,118 +157,21 @@
     <div class="row">
       <div class="col-md-12">
         <div class="titlepage">
-          <h2>Some <strong class="yellow">important facts</strong></h2>
-          <span>luptatum. Libero eligendi molestias iure error animi totam laudantium, aspernatur similique id eos a
-          t consectetur illo culpa,</span>
+          <h2>MAP</h2>
+
         </div>
       </div>
     </div>
   </div>
   <div class="important_bg">
-    <div class="container">
-      <div class="row">
-
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>200+</h3>
-            <span>Teachers</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>20+</h3>
-            <span>Colleges</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>50+</h3>
-            <span>Courses</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>200+</h3>
-            <span>Members</span>
-          </div>
-        </div>
-        <div class="col col-xs-12">
-          <div class="important_box">
-            <h3>10+</h3>
-            <span>countries</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+   
+<!-- memangil web -->
+        <iframe src="<?=base_url()?>/home" width="1260" height="650"></iframe>
+ </div>
 </div>
 </div>
 
 <!-- end our -->
-<!-- Courses -->
-<div id="courses" class="Courses">
-  <div class="container-fluid padding_left3">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div class="box_bg">
-          <div class="box_bg_img">
-            <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="<?=base_url()?>assets/web/images/my1.jpg"></figure>
-                  <div class="overlay">
-                    <h3>Data Structures</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content o</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="<?=base_url()?>assets/web/images/my2.jpg"></figure>
-                  <div class="overlay">
-                    <h3>Cinematography</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content o</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="<?=base_url()?>assets/web/images/my3.jpg"></figure>
-                  <div class="overlay">
-                    <h3>Skills</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content o</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="box_my">
-                  <figure><img src="<?=base_url()?>assets/web/images/my4.jpg"></figure>
-                  <div class="overlay">
-                    <h3>Teaching Science</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content o</p>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border_right">
-        <div class="box_text">
-          <div class="titlepage">
-            <h2>My <strong class="yellow"> Courses</strong></h2>
-          </div>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-          <a href="Javascript:void(0)">Read more</a>
-        </div>
-      </div> 
-    </div>
-  </div>
-</div>
-<!-- end Courses -->
 
 <!-- learn -->
 
@@ -328,20 +181,12 @@
     <div class="row">
       <div class="col-md-12">
         <div class="titlepage">
-          <h2>Learn <strong class="yellow">the Practical way</strong></h2>
-          <span>packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span>
+          <h2>Bagaimana <strong class="yellow">WebGIS Bekerja?</strong></h2>
+          <span>Sesuai dengan penggunaan website lainya, WebGIS pun berjalan dengan menampilkan data dari server sesuai dengan permintaan pengguna. Jadi ketika klien masuk dalam WebGIS, ada permintaan dari client ke server. Selanjutnya server memberi tanggapan permintaan dengan mengirimkan data yang diinginkan. Selanjutnya browser akan menampilkan data tersebut.</span>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="learn_box">
-          <figure><img src="<?=base_url()?>assets/web/images/img.jpg" alt="img"/></figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- MAKE --> 
 <div class="make">
   <div class="container">
