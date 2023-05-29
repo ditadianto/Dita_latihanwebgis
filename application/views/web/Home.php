@@ -14,17 +14,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- fevicon -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="icon" href="<?=base_url()?>assets/web/images/fevicon.png" type="image/gif" />
   <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/css/bootstrap.min.css">
   <!-- style css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/css/style.css">
   <!-- Responsive-->
-  <link rel="stylesheet" href="css/responsive.css">  
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/css/responsive.css">  
   <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/web/css/jquery.mCustomScrollbar.min.css">
   <!-- Tweaks for older IEs-->
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/<?=base_url()?>assets/web/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -35,7 +35,7 @@
 <body class="main-layout">
   <!-- loader  -->
   <div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    <div class="loader"><img src="<?=base_url()?>assets/web/images/loading.gif" alt="#" /></div>
   </div>
   <!-- end loader -->
   <!-- header -->
@@ -49,7 +49,7 @@
               <div class="full">
                 <div class="center-desk">
                   <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                    <a href="index.html"><img src="<?=base_url()?>assets/web/images/logo.png" alt="#" /></a>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                  </div>
                </div> 
                <div class="mean-last">
-                       <a href="#"><img src="images/search_icon.png" alt="#" /></a> <a href="#">login/sing up</a></div>              
+                       <a href="#"><img src="<?=base_url()?>assets/web/images/search_icon.png" alt="#" /></a> <a href="#">login/sing up</a></div>              
              </div>
            </div>
          </div>
@@ -102,7 +102,7 @@
                   </div>
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="<?=base_url()?>assets/web/images/img2.png"></figure>
                     </div>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
 
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="<?=base_url()?>assets/web/images/img2.png"></figure>
                     </div>
                   </div>
                 </div>
@@ -149,7 +149,7 @@
                   </div>
                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="<?=base_url()?>assets/web/images/img2.png"></figure>
                     </div>
                   </div>
                 </div>
@@ -190,7 +190,7 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
-          <figure><img src="images/about.jpg" alt="#" /></figure>
+          <figure><img src="<?=base_url()?>assets/web/images/about.jpg" alt="#" /></figure>
         </div>
       </div>
     </div>
@@ -265,7 +265,7 @@
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my1.jpg"></figure>
+                  <figure><img src="<?=base_url()?>assets/web/images/my1.jpg"></figure>
                   <div class="overlay">
                     <h3>Data Structures</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -274,7 +274,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my2.jpg"></figure>
+                  <figure><img src="<?=base_url()?>assets/web/images/my2.jpg"></figure>
                   <div class="overlay">
                     <h3>Cinematography</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -283,7 +283,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my3.jpg"></figure>
+                  <figure><img src="<?=base_url()?>assets/web/images/my3.jpg"></figure>
                   <div class="overlay">
                     <h3>Skills</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -292,7 +292,7 @@
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="box_my">
-                  <figure><img src="images/my4.jpg"></figure>
+                  <figure><img src="<?=base_url()?>assets/web/images/my4.jpg"></figure>
                   <div class="overlay">
                     <h3>Teaching Science</h3>
                     <p>It is a long established fact that a reader will be distracted by the readable content o</p>
@@ -336,7 +336,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="learn_box">
-          <figure><img src="images/img.jpg" alt="img"/></figure>
+          <figure><img src="<?=base_url()?>assets/web/images/img.jpg" alt="img"/></figure>
         </div>
       </div>
     </div>
@@ -362,7 +362,7 @@
       </div>
       <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
         <div class="make_img">
-          <figure><img src="images/make_img.jpg"></figure>
+          <figure><img src="<?=base_url()?>assets/web/images/make_img.jpg"></figure>
         </div>
       </div>
     </div>
@@ -439,18 +439,18 @@
                     <h3>Contact us </h3>
                     <ul class="loca">
                       <li>
-                        <a href="#"><img src="icon/loc.png" alt="#" /></a>London 145
+                        <a href="#"><img src="<?=base_url()?>assets/web/icon/loc.png" alt="#" /></a>London 145
                         <br>United Kingdom </li>
                         <li>
-                          <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com </li>
+                          <a href="#"><img src="<?=base_url()?>assets/web/icon/email.png" alt="#" /></a>demo@gmail.com </li>
                           <li>
-                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
+                            <a href="#"><img src="<?=base_url()?>assets/web/icon/call.png" alt="#" /></a>+12586954775 </li>
                           </ul>
                           <ul class="social_link">
-                            <li><a href="#"><img src="icon/fb.png"></a></li>
-                            <li><a href="#"><img src="icon/tw.png"></a></li>
-                            <li><a href="#"><img src="icon/lin(2).png"></a></li>
-                            <li><a href="#"><img src="icon/instagram.png"></a></li>
+                            <li><a href="#"><img src="<?=base_url()?>assets/web/icon/fb.png"></a></li>
+                            <li><a href="#"><img src="<?=base_url()?>assets/web/icon/tw.png"></a></li>
+                            <li><a href="#"><img src="<?=base_url()?>assets/web/icon/lin(2).png"></a></li>
+                            <li><a href="#"><img src="<?=base_url()?>assets/web/icon/instagram.png"></a></li>
                           </ul>
 
                         </div>
@@ -482,7 +482,7 @@
 
                       <div class="col-lg-3 col-md-6 col-sm-6 ">
                         <div class="address">
-                          <a href="index.html"> <img src="images/logo1.jpg" alt="logo"></a>
+                          <a href="index.html"> <img src="<?=base_url()?>assets/web/images/logo1.jpg" alt="logo"></a>
                         </div>
                       </div>
                     </div>
@@ -500,14 +500,14 @@
           </footr>
           <!-- end footer -->
           <!-- Javascript files-->
-          <script src="js/jquery.min.js"></script>
-          <script src="js/popper.min.js"></script>
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/jquery-3.0.0.min.js"></script>
-          <script src="js/plugin.js"></script>
+          <script src="<?=base_url()?>assets/web/js/jquery.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/popper.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/bootstrap.bundle.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/jquery-3.0.0.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/plugin.js"></script>
           <!-- sidebar -->
-          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-          <script src="js/custom.js"></script>
+          <script src="<?=base_url()?>assets/web/js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="<?=base_url()?>assets/web/js/custom.js"></script>
           <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
 
@@ -523,7 +523,7 @@ function initMap() {
     },
   });
 
-  var image = 'images/maps-and-flags.png';
+  var image = '<?=base_url()?>assets/web/images/maps-and-flags.png';
   var beachMarker = new google.maps.Marker({
     position: {
       lat: 40.645037,
